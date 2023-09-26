@@ -83,6 +83,19 @@ console.log(nameUser);
 
 const lastNameUser = "Badillo"; // Can not modify const values
 
+// ----------------------------------------------
+// Good practices for declaration of variables
+let complete_name = "Jony Badillo";
+console.log(complete_name);
+
+let a,b;
+a = 10, b = 20;
+let c = a + b;
+console.log(c);
+
+console.log(completeName);
+console.log(complete_name);
+
 
 
 
