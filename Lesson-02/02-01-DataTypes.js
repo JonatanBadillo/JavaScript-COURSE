@@ -75,3 +75,15 @@ x = 2 + 4 + name;
 console.log(x);
 
 
+// ----------------------------------------------
+// Basic usage of var,let and const
+let nameUser;
+nameUser = "Jony"; // variables that can change the value
+console.log(nameUser);
+
+const lastNameUser = "Badillo"; // Can not modify const values
+
+
+
+
+
