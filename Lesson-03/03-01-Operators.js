@@ -80,3 +80,12 @@ console.log('Result: ' + result);
 
 result = a >= b;
 console.log('Result: ' + result);
+
+// ----------------------------------------------
+// Exercise Even or Odd number
+a = 15;
+if (a % 2 == 0){
+    console.log('Even Number')
+}else{
+    console.log('Odd Number')
+}
