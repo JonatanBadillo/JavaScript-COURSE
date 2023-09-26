@@ -19,6 +19,8 @@ z = a ** b;
 console.log("The result with the exponent is: " + z);
 
 
+
+
 // ----------------------------------------------
 // Pre-Increase with ++ before the variable
 z = a + b;
@@ -45,3 +47,18 @@ z = b--;
 console.log('Post-Decrement');
 console.log(b);
 console.log(z);
+
+// ----------------------------------------------
+// Assignment Operators
+console.log('Assignment Operators')
+a = 10;
+console.log(a);
+
+a += 1;
+console.log(a);
+
+a -= 2;
+console.log(a);
+
+a *= 3;
+console.log(a);
