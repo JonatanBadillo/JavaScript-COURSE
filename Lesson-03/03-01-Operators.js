@@ -62,3 +62,21 @@ console.log(a);
 
 a *= 3;
 console.log(a);
+
+// ----------------------------------------------
+// Comparison Operators
+a = 4;
+b = 2;
+
+let result = a == b;
+console.log('Result: ' + result);
+
+result = a != b;
+console.log('Result: ' + result);
+
+result = a > b;
+console.log('Result: ' + result);
+
+
+result = a >= b;
+console.log('Result: ' + result);
