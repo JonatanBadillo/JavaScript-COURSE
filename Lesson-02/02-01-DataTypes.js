@@ -54,3 +54,24 @@ console.log(typeof cars);
 
 var z = '';
 console.log(z);
+
+
+
+// ----------------------------------------------
+// Concatenate strings
+var name = 'Jonatan';
+var lastName = 'Badillo';
+
+var completeName = name + ' ' + lastName;
+console.log(completeName);
+
+var x = name + 2+4;
+console.log(x);
+
+x = name + (2+4);
+console.log(x);
+
+x = 2 + 4 + name;
+console.log(x);
+
+
