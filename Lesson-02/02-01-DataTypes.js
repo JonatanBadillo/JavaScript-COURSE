@@ -46,4 +46,11 @@ console.log(typeof x);
 // null = no value
 var y = null;
 console.log(y);
-console.log(typeof y)
+console.log(typeof y);
+
+var cars = ['BMW','Audi','Volvo'];
+console.log(cars);
+console.log(typeof cars);
+
+var z = '';
+console.log(z);
