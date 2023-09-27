@@ -22,3 +22,14 @@ for(let i = 0; i<5 ; i++){
     console.log(i+1);
 }
 console.log('End of FOR CYCLE');
+
+// BREAK
+console.log('BREAK');
+
+for(let i = 0; i<5 ; i++){
+    if (i % 2 == 0){
+        console.log(i+1);
+        break;
+    }
+}
+console.log('End of FOR CYCLE');
