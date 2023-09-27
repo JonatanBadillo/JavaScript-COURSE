@@ -101,3 +101,26 @@ if (age >= 18){
 }else{
     console.log('You are not an adult person');
 }
+
+
+// ----------------------------------------------
+// Ternary Operator
+console.log('Ternary Operator');
+
+result = (3>2) ? 'true' : 'false';
+console.log(result);
+
+
+
+
+// ----------------------------------------------
+// Convert String to a Number
+console.log('Convert String to a Number');
+
+let myNumber = '10';
+console.log(typeof myNumber);
+
+
+let myAge = Number(myNumber);
+console.log(typeof myAge);
+
