@@ -23,3 +23,9 @@ let x = function(a,b){return a+b};
 
 result = x(1,2);
 console.log(result);
+
+// Self Invoking in JavaScript
+
+(function(){
+    console.log('Executing the function');
+})();
