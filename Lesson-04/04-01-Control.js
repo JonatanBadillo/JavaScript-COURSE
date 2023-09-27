@@ -55,3 +55,26 @@ if(hour>=6 & hour<=11){
 }else if(hour>=0 &  hour<=5){
     console.log('Sleeping');
 }
+
+
+// ----------------------------------------------
+// Switch
+console.log('Switch');
+number = 2;
+let textNumber = 'Unknown value';
+
+switch(number){
+    case 1 :
+        textNumber = 'one';
+        break;
+    case 2:
+        textNumber = 'two';
+        break;
+    case 3:
+        textNumber = 'three';
+        break;
+    default:
+        textNumber = 'unknown number'        
+}
+
+console.log(textNumber);
