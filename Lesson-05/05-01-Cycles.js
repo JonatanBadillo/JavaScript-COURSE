@@ -33,3 +33,13 @@ for(let i = 0; i<5 ; i++){
     }
 }
 console.log('End of FOR CYCLE');
+
+// LABELS
+console.log('LABEL');
+starting:
+for(let i = 0; i<5 ; i++){
+    if (i % 2 != 0){
+        continue starting;
+    }
+    console.log(i);
+}
