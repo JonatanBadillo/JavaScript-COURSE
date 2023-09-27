@@ -124,3 +124,13 @@ console.log(typeof myNumber);
 let myAge = Number(myNumber);
 console.log(typeof myAge);
 
+
+
+// ----------------------------------------------
+// isNaN
+console.log('Function isNaN');
+a = '10x'
+console.log(isNaN(a));
+
+b = 10;
+console.log(isNaN(b));
