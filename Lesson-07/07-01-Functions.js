@@ -29,3 +29,12 @@ console.log(result);
 (function(){
     console.log('Executing the function');
 })();
+
+console.log(typeof myFunction);
+
+var myFunctionText = myFunction.toString();
+console.log(myFunctionText);
+
+// Arrow Functions
+const arrowFunction = (a,b) => a+b;
+console.log(arrowFunction(5,5));
