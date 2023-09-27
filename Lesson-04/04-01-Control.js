@@ -39,3 +39,19 @@ if(month == 1 || month == 2 || month == 12){
 }
 
 console.log(season);
+
+
+
+// ----------------------------------------------
+// Exercise Calculate the hour
+console.log('Calculate the hour:');
+let hour = 5;
+if(hour>=6 & hour<=11){
+    console.log('Good Morning');
+}else if(hour>=12 & hour<=18){
+    console.log('Good afternoon');
+}else if(hour>=19 & hour<=24){
+    console.log('Good night');
+}else if(hour>=0 &  hour<=5){
+    console.log('Sleeping');
+}
