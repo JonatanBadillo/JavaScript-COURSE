@@ -83,9 +83,21 @@ console.log('Result: ' + result);
 
 // ----------------------------------------------
 // Exercise Even or Odd number
+console.log('Exercise Even or Odd number');
 a = 15;
 if (a % 2 == 0){
     console.log('Even Number')
 }else{
     console.log('Odd Number')
+}
+
+
+// ----------------------------------------------
+// Exercise Adult Person
+console.log('Exercise Adult Person')
+let age = 18
+if (age >= 18){
+    console.log('You are an adult person');
+}else{
+    console.log('You are not an adult person');
 }
