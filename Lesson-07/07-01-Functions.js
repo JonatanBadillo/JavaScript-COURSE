@@ -10,10 +10,16 @@ function myFunction(a, b){
 // Calling the function
 myFunction(3,2);
 
-
+// Return
 function newFunction(a,b){
     return a + b;
 }
 
 result = newFunction(5,4);
+console.log(result);
+
+// Declaration Functions Expression
+let x = function(a,b){return a+b};
+
+result = x(1,2);
 console.log(result);
