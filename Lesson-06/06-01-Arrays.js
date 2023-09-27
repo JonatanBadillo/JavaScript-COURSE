@@ -13,3 +13,11 @@ console.log(cars[2]);
 for(let i = 0;i < cars.length ;i++){
     console.log(cars[i]);
 }
+
+// Modifying elements of the array
+cars[1] = 'Audi'
+console.log(cars);
+
+// Adding new elements
+cars.push('Ferrari');
+console.log(cars);
