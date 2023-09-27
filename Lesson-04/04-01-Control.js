@@ -67,14 +67,14 @@ switch(number){
     case 1 :
         textNumber = 'one';
         break;
-    case 2:
+    case 2: 
         textNumber = 'two';
         break;
     case 3:
         textNumber = 'three';
         break;
     default:
-        textNumber = 'unknown number'        
+        textNumber = 'unknown number' ;       
 }
 
 console.log(textNumber);
