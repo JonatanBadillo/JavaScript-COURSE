@@ -60,3 +60,14 @@ function addEverything(){
 
 result = addEverything(5,4,13,10,9);
 console.log(result);
+
+ // Parameter by value
+ let a = 10;
+
+ function changingValue(x){
+    x = 20;
+    return;
+ }
+
+ changingValue(a);
+ console.log(a);
