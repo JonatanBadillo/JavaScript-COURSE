@@ -48,3 +48,15 @@ let operation = function(a,b){
 
 result = operation(5,3);
 console.log(result);
+
+// Operations with parameters EXAMPLE
+function addEverything(){
+    let resultOperation = 0;
+    for(let i = 0 ; i < arguments.length ; i++){
+        resultOperation += arguments[i];
+    }
+    return resultOperation;
+}
+
+result = addEverything(5,4,13,10,9);
+console.log(result);
