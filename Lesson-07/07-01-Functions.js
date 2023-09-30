@@ -71,3 +71,19 @@ console.log(result);
 
  changingValue(a);
  console.log(a);
+
+
+ // Parameters by reference
+
+ const person = {
+    name: 'Jony',
+    lastname: 'Badillo'
+ }
+
+ function changingValueObject(p1){
+    p1.name = 'Jonatan';
+ }
+
+ 
+changingValueObject(person);
+ console.log(person);
