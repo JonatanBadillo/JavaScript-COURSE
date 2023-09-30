@@ -1,6 +1,20 @@
 let x = 10;
 console.log(x.length);
 
+// Constructor method of objects Person 
+function Person(name,lastname,email){ // With the constructor you can create a lot of objects with the same properties
+    this.name = name;
+    this.lastname = lastname;
+    this.email = email;
+}
+
+let father = new Person('Juan','Perez','jperez@mail.com');
+let mother = new Person('Laura','Ramirez','jramirez@mail.com');
+console.log(mother);
+console.log(father);
+
+
+// Creating Object
 let person = {
     name: 'Jony',
     lastname: 'Badillo',
