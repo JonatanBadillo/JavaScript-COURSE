@@ -6,8 +6,16 @@ let person = {
     lastname: 'Badillo',
     email: 'jonatanbadillo@mail.com',
     age : 21, 
+    language : 'es',
+    // Get in Objects
+    get lang(){
+        return this.language.toLocaleUpperCase();
+    },
+    // Set in Objects
+    set lang(lang){
+        this.language = lang.toLocaleUpperCase();
+    },
     // Adding methods to the objects
-    
     completeName: function(){
         return this.name + ' ' +this.lastname;
     },
@@ -19,9 +27,13 @@ let person = {
 }
 
 console.log(person.fullName);
+console.log(person.lang);
+person.lang = 'en'; // Calling SET method
 
-person.name = 'Jonatan'
 console.log(person);
+console.log(person.language);
+
+
 
 console.log(person.completeName());
 
