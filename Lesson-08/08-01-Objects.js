@@ -5,8 +5,15 @@ let person = {
     name: 'Jony',
     lastname: 'Badillo',
     email: 'jonatanbadillo@mail.com',
-    age : 21
+    age : 21, 
+    // Adding methods to the objects
+    completeName: function(){
+        return this.name + ' ' +this.lastname;
+    }
 }
 
-person.age = 20
-console.log(person)
+person.name = 'Jonatan'
+console.log(person);
+
+console.log(person.completeName());
+
