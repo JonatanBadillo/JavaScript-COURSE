@@ -7,10 +7,18 @@ let person = {
     email: 'jonatanbadillo@mail.com',
     age : 21, 
     // Adding methods to the objects
+    
     completeName: function(){
+        return this.name + ' ' +this.lastname;
+    },
+
+    // Get in Objects
+    get fullName(){
         return this.name + ' ' +this.lastname;
     }
 }
+
+console.log(person.fullName);
 
 person.name = 'Jonatan'
 console.log(person);
@@ -43,3 +51,6 @@ for(namePropertie in person){
 
 let personArray = Object.values(person);
 console.log(personArray);
+
+
+
