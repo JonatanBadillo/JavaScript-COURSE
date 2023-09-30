@@ -32,3 +32,14 @@ console.log(person);
 // Deleting
 delete person.tel;
 console.log(person);
+
+// Manners of printing an Object
+console.log(person.name + ', ' + person.lastname)
+
+// for in
+for(namePropertie in person){
+    console.log(person[namePropertie])
+}
+
+let personArray = Object.values(person);
+console.log(personArray);
