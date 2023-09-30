@@ -22,6 +22,13 @@ console.log(person.completeName());
 let person2 = new Object();
 person2.name = 'Guillermo';
 person2.lastname = 'Ochoa';
-person2.number = 55443322;
+person2.number = '55443322';
 console.log(person2)
 
+// Add or Eliminate Properties in a Object
+// Adding 
+person.tel = '44332211';
+console.log(person);
+// Deleting
+delete person.tel;
+console.log(person);
