@@ -17,3 +17,11 @@ console.log(person);
 
 console.log(person.completeName());
 
+
+//  Another manner of creating an Object
+let person2 = new Object();
+person2.name = 'Guillermo';
+person2.lastname = 'Ochoa';
+person2.number = 55443322;
+console.log(person2)
+
