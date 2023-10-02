@@ -6,12 +6,17 @@ function Person(name,lastname,email){ // With the constructor you can create a l
     this.name = name;
     this.lastname = lastname;
     this.email = email;
+    // Functions in the constructor method
+    this.compleName = function(){
+        return this.name +  ' ' + this.lastname
+    }
 }
 
 let father = new Person('Juan','Perez','jperez@mail.com');
 let mother = new Person('Laura','Ramirez','jramirez@mail.com');
 console.log(mother);
 console.log(father);
+console.log(father.compleName());
 
 
 // Creating Object
