@@ -105,3 +105,23 @@ father.tel = '11223344';
 console.log(father.tel);
 mother.tel = '99887766';
 console.log(mother.tel);
+
+
+let newPerson1 = {
+    name: 'Juan',
+    lastname: 'Perez',
+    compleName: function(){
+        return this.name + ' ' + this.lastname;
+    }
+}
+
+let newPerson2 = {
+    name: 'Carlos',
+    lastname: 'Lara'
+}
+
+// Usage of call to use the method newPerson1.completeName() with the data of the newPerson2
+console.log(newPerson1.compleName());
+
+
+console.log(newPerson1.compleName.call(newPerson2)); // Usage of CALL
