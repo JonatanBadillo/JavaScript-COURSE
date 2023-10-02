@@ -110,8 +110,8 @@ console.log(mother.tel);
 let newPerson1 = {
     name: 'Juan',
     lastname: 'Perez',
-    compleName: function(){
-        return this.name + ' ' + this.lastname;
+    compleName: function(tittle,tel){
+        return tittle + ':' + this.name + ' ' + this.lastname + ',' + tel;
     }
 }
 
@@ -121,7 +121,7 @@ let newPerson2 = {
 }
 
 // Usage of call to use the method newPerson1.completeName() with the data of the newPerson2
-console.log(newPerson1.compleName());
+console.log(newPerson1.compleName('Admin','11223344'));
 
 
-console.log(newPerson1.compleName.call(newPerson2)); // Usage of CALL
+console.log(newPerson1.compleName.call(newPerson2,'Engineer','5544332211')); // Usage of CALL
