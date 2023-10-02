@@ -120,8 +120,17 @@ let newPerson2 = {
     lastname: 'Lara'
 }
 
+let newPerson3 = {
+    name: 'Luis',
+    lastname: 'Hernandez'
+}
+
 // Usage of call to use the method newPerson1.completeName() with the data of the newPerson2
 console.log(newPerson1.compleName('Admin','11223344'));
 
 
 console.log(newPerson1.compleName.call(newPerson2,'Engineer','5544332211')); // Usage of CALL
+
+// Usage of Apply
+let new_array = ['Ing','55443322'];
+console.log(newPerson1.compleName.apply(newPerson3,new_array)); 
