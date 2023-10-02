@@ -93,3 +93,15 @@ let myString2 = 'hello';
 
 let myNumber = new Number(1); // not necessary
 let myNumber2 = 1;
+
+// Usage of Prototype in JS
+Person.prototype.tel = '44332211';
+console.log(father.tel);
+mother.tel = '99887766';
+console.log(mother.tel);
+
+
+father.tel = '11223344';
+console.log(father.tel);
+mother.tel = '99887766';
+console.log(mother.tel);
