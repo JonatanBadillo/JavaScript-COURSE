@@ -84,4 +84,12 @@ let personArray = Object.values(person);
 console.log(personArray);
 
 
+// Other manners of creating an object
+let myObject = new Object();
+let myObject2 = {};
 
+let myString1 = new String('hello');// not necessary
+let myString2 = 'hello';
+
+let myNumber = new Number(1); // not necessary
+let myNumber2 = 1;
