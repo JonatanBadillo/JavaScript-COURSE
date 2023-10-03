@@ -43,6 +43,11 @@ class Employee extends Person{
     set area(area){
         this._area = area;
     }
+
+    // Overwriting
+    completeName(){
+        return this._name + ' ' + this._lastname + ', ' + this._area;
+    }
 }
 
 // Creating the object
@@ -59,4 +64,4 @@ console.log(person2);
 // Inheritance
 let employee1 = new Employee('Leo','Messi','Athlete');
 console.log(employee1);
-console.log(employee1.completeName()); // Inheritance of the method
+console.log(employee1.completeName() ); // Inheritance of the method
