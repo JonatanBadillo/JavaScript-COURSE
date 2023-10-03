@@ -26,6 +26,11 @@ class Person{
     completeName(){
         return this._name + ' ' + this._lastname;
     }
+
+    toString(){
+        // polymorphism
+        return this.completeName();
+    }
 }
 
 
@@ -57,6 +62,7 @@ let person1 = new Person('Jony','Badillo');
 console.log(person1);
 person1.name = 'Jonatan Enrique'; // set name('Jonatan Enrique')
 console.log(person1.name);// get name()
+console.log(person1.toString());
 
 let person2 = new Person('Memo','Ochoa');
 console.log(person2);
@@ -65,3 +71,4 @@ console.log(person2);
 let employee1 = new Employee('Leo','Messi','Athlete');
 console.log(employee1);
 console.log(employee1.completeName() ); // Inheritance of the method
+console.log(employee1.toString());
