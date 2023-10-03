@@ -1,3 +1,6 @@
+// It is not possible to create an object before declaring a class
+// Does not apply hoisting
+
 class Person{
     constructor(name , lastname){
         this._name = name;
@@ -22,6 +25,22 @@ class Person{
 }
 
 
+// Inheritance
+class Employee extends Person{
+    constructor(name,lastname,area){
+        super(name,lastname);
+        this._area = area;
+    }
+
+    get area(){
+        return this._area;
+    }
+
+    set area(area){
+        this._area = area;
+    }
+}
+
 // Creating the object
 let person1 = new Person('Jony','Badillo');
 //person1.name = 'Jony';
@@ -32,3 +51,7 @@ console.log(person1.name);// get name()
 
 let person2 = new Person('Memo','Ochoa');
 console.log(person2);
+
+// Inheritance
+let employee1 = new Employee('Leo','Messi','Athlete');
+console.log(employee1);
