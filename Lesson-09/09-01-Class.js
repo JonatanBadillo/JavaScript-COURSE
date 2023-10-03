@@ -29,6 +29,7 @@ class Person{
 
     toString(){
         // polymorphism
+        // the method that will be executed will depend on the reference of the object(father type or son type)
         return this.completeName();
     }
 }
