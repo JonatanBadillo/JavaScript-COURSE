@@ -22,6 +22,10 @@ class Person{
     set lastname(lastname){
         this._lastname = lastname;
     }
+
+    completeName(){
+        return this._name + ' ' + this._lastname;
+    }
 }
 
 
@@ -55,3 +59,4 @@ console.log(person2);
 // Inheritance
 let employee1 = new Employee('Leo','Messi','Athlete');
 console.log(employee1);
+console.log(employee1.completeName()); // Inheritance of the method
