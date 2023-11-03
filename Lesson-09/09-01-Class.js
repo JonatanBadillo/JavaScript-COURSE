@@ -3,12 +3,12 @@
 
 class Person{
     // Static attribute
-    static counterObjectsPerson = 0; // attribute of the class
+    static counterPerson = 0; // attribute of the class
 
     constructor(name , lastname){ // this attributes are related with the objects
         this._name = name;
         this._lastname = lastname;
-        Person.counterObjectsPerson++;
+        this.idPerson = ++Person.counterPerson;
     }
 
     get name(){
@@ -28,7 +28,7 @@ class Person{
     }
 
     completeName(){
-        return this._name + ' ' + this._lastname;
+        return this.idPerson + ' - ' + this._name + ' ' + this._lastname;
     }
 
     toString(){
@@ -98,5 +98,7 @@ Person.hello2(person1); // Static method called from the class with object as pa
 Employee.hello();
 Employee.hello2(employee1); // Inheritance static method is realated with the class, not with the objects
 
-console.log(Person.counterObjectsPerson); // Accesing to the static attribute counter
-console.log(Employee.counterObjectsPerson); // Accesing to the static attribute counter of the class Person  // Its 3 because of the creation of the object employee , and 2 times person
+//console.log(Person.counterObjectsPerson); // Accesing to the static attribute counter
+//console.log(Employee.counterObjectsPerson); // Accesing to the static attribute counter of the class Person  // Its 3 because of the creation of the object employee , and 2 times person
+
+console.log(Person.counterPerson);
