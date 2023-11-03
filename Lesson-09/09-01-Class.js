@@ -32,6 +32,11 @@ class Person{
         // the method that will be executed will depend on the reference of the object(father type or son type)
         return this.completeName();
     }
+
+    // Static Method
+    static hello(){
+        console.log("Hello from static method");
+    }
 }
 
 
@@ -54,6 +59,8 @@ class Employee extends Person{
     completeName(){
         return this._name + ' ' + this._lastname + ', ' + this._area;
     }
+
+    
 }
 
 // Creating the object
@@ -73,3 +80,7 @@ let employee1 = new Employee('Leo','Messi','Athlete');
 console.log(employee1);
 console.log(employee1.completeName() ); // Inheritance of the method
 console.log(employee1.toString());
+
+
+// person1.hello(); is not possible calling a static method from an object
+Person.hello(); // Static method can be called from the class
