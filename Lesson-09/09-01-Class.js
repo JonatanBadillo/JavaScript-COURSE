@@ -8,6 +8,7 @@ class Person{
     constructor(name , lastname){
         this._name = name;
         this._lastname = lastname;
+        Person.counterObjectsPerson++;
     }
 
     get name(){
@@ -98,3 +99,4 @@ Employee.hello();
 Employee.hello2(employee1); // Inheritance static method is realated with the class, not with the objects
 
 console.log(Person.counterObjectsPerson); // Accesing to the static attribute counter
+console.log(Employee.counterObjectsPerson); // Accesing to the static attribute counter of the class Person
