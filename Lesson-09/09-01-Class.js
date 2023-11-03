@@ -3,9 +3,9 @@
 
 class Person{
     // Static attribute
-    static counterObjectsPerson = 0;
+    static counterObjectsPerson = 0; // attribute of the class
 
-    constructor(name , lastname){
+    constructor(name , lastname){ // this attributes are related with the objects
         this._name = name;
         this._lastname = lastname;
         Person.counterObjectsPerson++;
@@ -99,4 +99,4 @@ Employee.hello();
 Employee.hello2(employee1); // Inheritance static method is realated with the class, not with the objects
 
 console.log(Person.counterObjectsPerson); // Accesing to the static attribute counter
-console.log(Employee.counterObjectsPerson); // Accesing to the static attribute counter of the class Person
+console.log(Employee.counterObjectsPerson); // Accesing to the static attribute counter of the class Person  // Its 3 because of the creation of the object employee , and 2 times person
