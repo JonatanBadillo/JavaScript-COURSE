@@ -5,10 +5,19 @@ class Person{
     // Static attribute
     static counterPerson = 0; // attribute of the class
 
+    static get MAX_OBJ(){ // Static CONST as method
+        return 5;
+    }
+
     constructor(name , lastname){ // this attributes are related with the objects
         this._name = name;
         this._lastname = lastname;
-        this.idPerson = ++Person.counterPerson;
+        if(Person.counterPerson < Person.MAX_OBJ){
+            this.idPerson = ++Person.counterPerson;
+        }else{
+            console.log('MAX of objects person');
+        }
+        
     }
 
     get name(){
@@ -102,3 +111,5 @@ Employee.hello2(employee1); // Inheritance static method is realated with the cl
 //console.log(Employee.counterObjectsPerson); // Accesing to the static attribute counter of the class Person  // Its 3 because of the creation of the object employee , and 2 times person
 
 console.log(Person.counterPerson);
+
+console.log(Person.MAX_OBJ);
