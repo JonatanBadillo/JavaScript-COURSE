@@ -1,7 +1,8 @@
 class Employee extends Person{
-    constructor(idPerson,name,lastname,age,idEmployee,salary){
+    static counterEmployee = 0;
+    constructor(idPerson,name,lastname,age,salary){
         super(idPerson,name,lastname,age);
-        this.idEmployee = idEmployee;
+        this.idEmployee = ++counterEmployee;
         this.salary = salary
     }
 
