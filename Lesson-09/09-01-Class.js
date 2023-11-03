@@ -90,3 +90,6 @@ console.log(employee1.toString());
 Person.hello(); // Static method can be called from the class
 
 Person.hello2(person1); // Static method called from the class with object as parameter
+
+Employee.hello();
+Employee.hello2(employee1); // Inheritance static method is realated with the class, not with the objects
