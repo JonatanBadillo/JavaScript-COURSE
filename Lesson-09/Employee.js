@@ -1,7 +1,6 @@
 class Employee extends Person{
     static counterEmployee = 0;
-    constructor(idPerson,name,lastname,age,salary){
-        super(idPerson,name,lastname,age);
+    constructor(salary){
         this.idEmployee = ++counterEmployee;
         this.salary = salary
     }
@@ -16,5 +15,9 @@ class Employee extends Person{
 
     set salary(salary){
         this.salary = salary;
+    }
+
+    toString(){
+        return super.toString() + ' - ' + this.idEmployee + ' $' + this.salary;
     }
 }
