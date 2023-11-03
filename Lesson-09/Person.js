@@ -3,7 +3,7 @@ class Person{
     // creating the static attribute
     static counterPersons = 0;
     // creating constructor
-    constructor(name, lastname,age,idPerson){
+    constructor(idPerson,name, lastname,age){
         this.name = name;
         this.lastname = lastname;
         this.age = age;
@@ -43,3 +43,4 @@ class Person{
         return this.idPerson + ' - ' + this._name + ' ' + this._lastname + ', ' + this.age + ' years old';
     }
 }
+
