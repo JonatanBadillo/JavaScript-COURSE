@@ -37,6 +37,10 @@ class Person{
     static hello(){
         console.log("Hello from static method");
     }
+
+    static hello2(Person){
+        console.log(Person.name);
+    }
 }
 
 
@@ -84,3 +88,5 @@ console.log(employee1.toString());
 
 // person1.hello(); is not possible calling a static method from an object
 Person.hello(); // Static method can be called from the class
+
+Person.hello2(person1); // Static method called from the class with object as parameter
