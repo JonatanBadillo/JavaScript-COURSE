@@ -86,7 +86,7 @@ class Client extends Person {
     }
 
     toString() {
-        return super.toString() + ' - ' + this._idClient + ' ,' + this._registerDate;
+        return super.toString() + ' - Client:' + this._idClient + ' ,' + this._registerDate;
     }
 }
 
@@ -99,3 +99,6 @@ console.log(person2.toString());
 
 let employee1 = new Employee('Memo','Ochoa',37,5000);
 console.log(employee1.toString());
+
+let client1 = new Client('Leo','Messi',35, new Date());
+console.log(client1.toString());
