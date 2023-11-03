@@ -43,33 +43,36 @@ class Person {
 }
 
 
-class Employee extends Person{
+class Employee extends Person {
     static counterEmployee = 0;
-    constructor(salary){
-        this.idEmployee = ++counterEmployee;
-        this.salary = salary
+    constructor(name, lastname, age, salary) {
+        super(name, lastname, age);
+        this._idEmployee = ++Employee.counterEmployee;
+        this._salary = salary;
     }
 
-    get idEmployee(){
-        return this.idEmployee;
+    get idEmployee() {
+        return this._idEmployee;
     }
 
-    get salary(){
-        return this.salary;
+    get salary() {
+        return this._salary;
     }
 
-    set salary(salary){
-        this.salary = salary;
+    set salary(salary) {
+        this._salary = salary;
     }
 
-    toString(){
-        return super.toString() + ' - ' + this.idEmployee + ' $' + this.salary;
+    toString() {
+        return super.toString() + ' - Employee:' + this._idEmployee + ' ,$' + this._salary;
     }
 }
 
+
 class Client extends Person{
     static counterClient = 0;
-    constructor(registerDate){
+    constructor(name, lastname, age, registerDate){
+        super(name,lastname,age);
         idClient = ++counterClient;
         this.registerDate = registerDate;
     }
@@ -89,3 +92,9 @@ class Client extends Person{
 
 let person1 = new Person('Jony','Badillo',21);
 console.log(person1.toString());
+
+let person2 = new Person('Juan','Perez',35);
+console.log(person2.toString());
+
+let employee1 = new Employee('Memo','Ochoa',37,5000);
+console.log(employee1.toString());

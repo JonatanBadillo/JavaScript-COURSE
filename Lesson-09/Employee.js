@@ -1,23 +1,24 @@
-class Employee extends Person{
+class Employee extends Person {
     static counterEmployee = 0;
-    constructor(salary){
-        this.idEmployee = ++counterEmployee;
-        this.salary = salary
+    constructor(name, lastname, age, salary) {
+        super(name, lastname, age);
+        this._idEmployee = ++Employee.counterEmployee;
+        this._salary = salary;
     }
 
-    get idEmployee(){
-        return this.idEmployee;
+    get idEmployee() {
+        return this._idEmployee;
     }
 
-    get salary(){
-        return this.salary;
+    get salary() {
+        return this._salary;
     }
 
-    set salary(salary){
-        this.salary = salary;
+    set salary(salary) {
+        this._salary = salary;
     }
 
-    toString(){
-        return super.toString() + ' - ' + this.idEmployee + ' $' + this.salary;
+    toString() {
+        return super.toString() + ' - ' + this._idEmployee + ' $' + this._salary;
     }
 }

@@ -1,6 +1,7 @@
 class Client extends Person{
     static counterClient = 0;
-    constructor(registerDate){
+    constructor(name, lastname, age, registerDate){
+        super(name,lastname,age);
         idClient = ++counterClient;
         this.registerDate = registerDate;
     }
