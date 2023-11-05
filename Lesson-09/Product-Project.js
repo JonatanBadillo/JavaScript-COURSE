@@ -68,14 +68,16 @@ class Order{
     showOrder(){
         let productOrder = '';
         for(let product of this._products){
-            productOrder += product.toString() + ' ';
+            productOrder += '\n' + product.toString() + ' ';
         }
-        console.log('Order: ' + this._idOrder + ' ,Total: ' + this.calculateTotal() +  ' ,Products: ' + productOrder);
+        console.log('Order: ' + this._idOrder + ' ,Total: $' + this.calculateTotal() +  ' ,Products: ' + productOrder);
     }
 }
 
 let product1 = new Product('Jeans' , 200);
 let product2 = new Product('T shirt', 150);
+let product3 = new Product('Short', 50);
+let product4 = new Product('Jacket', 350);
 
 console.log(product1.toString())
 
@@ -84,4 +86,8 @@ let order2 = new Order();
 order1.addProduct(product1);
 order1.addProduct(product2);
 
+order2.addProduct(product3);
+order2.addProduct(product4);
+
 order1.showOrder();
+order2.showOrder();
