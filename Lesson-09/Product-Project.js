@@ -77,4 +77,9 @@ class Order{
 let product1 = new Product('Jeans' , 200);
 let product2 = new Product('T shirt', 150);
 
-console.log(product1.toString());
+console.log(product1.toString())
+
+let order1 = new Order();
+let order2 = new Order();
+order1.addProduct(product1);
+order2.addProduct(product2);
