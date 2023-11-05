@@ -49,10 +49,15 @@ class Order{
     addProduct(product){
         if(this._products.length < Order.MAX_PRODUCTS){
             this._products.push(product);
+            /*
+            this._products[this._coounterAddedProducts++] == product;
+            */
         }else{
             console.log('Not possible to add more products');
         }
     }
+
+    calculateTotal
 }
 
 let product1 = new Product('Jeans' , 200);
