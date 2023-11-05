@@ -56,8 +56,14 @@ class Order{
             console.log('Not possible to add more products');
         }
     }
-
-    calculateTotal
+    calculateTotal(){
+        let totalSale = 0;
+        for(let product of this._products){
+            totalSale += product.price;
+            // totalSale = ++this._products[product];
+        }
+        return totalSale;
+    }
 }
 
 let product1 = new Product('Jeans' , 200);
