@@ -25,4 +25,8 @@ class Product{
     set price(price){
         this._price = price;
     }
+
+    toString(){
+        this._idProduct + '.-' + this._name + ',$' + this._price
+    }
 }
