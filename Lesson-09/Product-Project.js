@@ -82,4 +82,6 @@ console.log(product1.toString())
 let order1 = new Order();
 let order2 = new Order();
 order1.addProduct(product1);
-order2.addProduct(product2);
+order1.addProduct(product2);
+
+order1.showOrder();
