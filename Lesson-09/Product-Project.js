@@ -31,6 +31,17 @@ class Product{
     }
 }
 
+class Order{
+    static counterOrders = 0;
+    static get MAX_PRODUCTS(){
+        return 5;
+    }
+    constructor(){
+        this._idOrder = ++Order.counterOrders; 
+        this._products = [];
+        this._counterAddedProducts = 0;
+    }
+}
 
 let product1 = new Product('Jeans' , 200);
 let product2 = new Product('T shirt', 150);
