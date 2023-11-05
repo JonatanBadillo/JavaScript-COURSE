@@ -3,10 +3,10 @@ class Product{
     constructor(name,price){
         this._name = name;
         this._price = price;
-        this._idProduct = ++counterProducts;
+        this._idProduct = ++Product.counterProducts;
     }
 
-    get _idProduct() {
+    get idProduct() {
         return this._idProduct;
     }
 
@@ -27,6 +27,12 @@ class Product{
     }
 
     toString(){
-        this._idProduct + '.-' + this._name + ',$' + this._price
+        return this._idProduct + '.- ' + this._name + ',$' + this._price
     }
 }
+
+
+let product1 = new Product('Jeans' , 200);
+let product2 = new Product('T shirt', 150);
+
+console.log(product1.toString());
