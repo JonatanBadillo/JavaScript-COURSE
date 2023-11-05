@@ -64,6 +64,14 @@ class Order{
         }
         return totalSale;
     }
+
+    showOrder(){
+        let productOrder = '';
+        for(let product of this._products){
+            productOrder += product.toString() + ' ';
+        }
+        console.log('Order: ' + this._idOrder + ' ,Total: ' + this.calculateTotal() +  ' ,Products: ' + productOrder);
+    }
 }
 
 let product1 = new Product('Jeans' , 200);
