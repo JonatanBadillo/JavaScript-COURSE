@@ -41,6 +41,18 @@ class Order{
         this._products = [];
         this._counterAddedProducts = 0;
     }
+
+    get idOrder(){
+        return this._idOrder;
+    }
+
+    addProduct(product){
+        if(this._products.length < Order.MAX_PRODUCTS){
+            this._products.push(product);
+        }else{
+            console.log('Not possible to add more products');
+        }
+    }
 }
 
 let product1 = new Product('Jeans' , 200);
