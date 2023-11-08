@@ -150,8 +150,14 @@ console.log(pc1.toString());
 let pc2 = new Computer('DELL',monitor2,m2,kb2);
 console.log(pc2.toString());
 
-order1 = new Order();
+order = new Order();
 order1.addComputer(pc1);
 order1.addComputer(pc2);
 
 order1.showOrder();
+
+order2 = new Order();
+order2.addComputer(pc2);
+order2.addComputer(pc2);
+
+order2.showOrder();
