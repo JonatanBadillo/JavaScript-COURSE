@@ -33,6 +33,9 @@ class Mouse extends InputDevice{
     }
 
     toString(){
-       return 'Mouse: ' + this.idMouse + ' ,Input Type: ' + this.inputType + ' ,Brand: ' +  this.brand;  
+       return 'Mouse: [idMouse: ' + this.idMouse + ' ,Input Type: ' + this.inputType + ' ,Brand: ' +  this.brand + ']';  
     }
 }
+
+let m1 = new Mouse('usb','hp');
+console.log(m1.toString())
