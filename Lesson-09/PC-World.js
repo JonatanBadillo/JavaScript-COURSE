@@ -33,6 +33,6 @@ class Mouse extends InputDevice{
     }
 
     toString(){
-        
+       return 'Mouse: ' + this.idMouse + ' ,Input Type: ' + this.inputType + ' ,Brand: ' +  this.brand;  
     }
 }
