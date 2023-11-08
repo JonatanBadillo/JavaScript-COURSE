@@ -117,12 +117,14 @@ class Order{
     }
 
     showOrder(){
+        let computersOrder = '';
+        for(let computer of this._computers){
+            computersOrder += `\n${computer}`;
+        }
 
+        console.log(`Order: ${this._idOrder}, Computers: ${computersOrder}`);
     }
 
-    toString(){
-
-    }
 }
 
 let m1 = new Mouse('usb','hp');
@@ -147,3 +149,9 @@ console.log(pc1.toString());
 
 let pc2 = new Computer('DELL',monitor2,m2,kb2);
 console.log(pc2.toString());
+
+order1 = new Order();
+order1.addComputer(pc1);
+order1.addComputer(pc2);
+
+order1.showOrder();
