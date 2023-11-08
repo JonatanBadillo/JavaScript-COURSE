@@ -95,6 +95,10 @@ class Computer{
         this._mouse = mouse;
         this._keyBoard = keyboard;
     }
+
+    toString(){
+        return 'Computer: [idComputer: ' + this._idComputer + ' ,Name: ' + this._name + ' ,Monitor: ' +  this._monitor +  ',Mouse: ' +  this._mouse + ',KeyBoard: ' + this._keyBoard + ']';    
+    }
 }
 
 let m1 = new Mouse('usb','hp');
