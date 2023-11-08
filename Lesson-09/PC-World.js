@@ -37,5 +37,24 @@ class Mouse extends InputDevice{
     }
 }
 
+class KeyBoard extends InputDevice{
+    static counterKeyBoard = 0;
+    constructor(inputType,brand,){
+        super(inputType,brand);
+        this._idKeyBoard = ++KeyBoard.counterKeyBoard;
+    }
+
+    get idKeyBoard(){
+        return this._idKeyBoard;
+    }
+
+    toString(){
+        return 'KeyBoard: [idKeyBoard: ' + this._idKeyBoard + ' ,Input Type: ' + this.inputType + ' ,Brand: ' +  this.brand + ']';  
+     }
+}
+
 let m1 = new Mouse('usb','hp');
 console.log(m1.toString())
+
+let kb1 = new KeyBoard('type c','dell');
+console.log(kb1.toString());
