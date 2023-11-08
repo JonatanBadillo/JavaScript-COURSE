@@ -86,6 +86,17 @@ class Monitor{
     }
 }
 
+class Computer{
+    static counterComputer = 0;
+    constructor(name,monitor,mouse,keyboard){
+        this._idComputer = ++Computer.counterComputer;
+        this._name = name;
+        this._monitor = monitor;
+        this._mouse = mouse;
+        this._keyBoard = keyboard;
+    }
+}
+
 let m1 = new Mouse('usb','hp');
 let m2 = new Mouse('bluetooth','toshiba');
 console.log(m1.toString());
@@ -98,6 +109,6 @@ console.log(kb2.toString());
 
 
 let monitor1 = new Monitor('LG','15');
-let monitor2 = new Monitor('Toshiba','20');
+let monitor2 = new Monitor('Toshiba','27');
 console.log(monitor1.toString());
 console.log(monitor2.toString());
