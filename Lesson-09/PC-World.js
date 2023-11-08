@@ -96,3 +96,8 @@ let kb2 = new KeyBoard('usb','MSI');
 console.log(kb1.toString());
 console.log(kb2.toString());
 
+
+let monitor1 = new Monitor('LG','15');
+let monitor2 = new Monitor('Toshiba','20');
+console.log(monitor1.toString());
+console.log(monitor2.toString());
