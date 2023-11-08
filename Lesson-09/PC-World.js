@@ -97,7 +97,7 @@ class Computer{
     }
 
     toString(){
-        return 'Computer: [idComputer: ' + this._idComputer + ' ,Name: ' + this._name + ' ,Monitor: ' +  this._monitor +  ',Mouse: ' +  this._mouse + ',KeyBoard: ' + this._keyBoard + ']';    
+        return 'Computer ' + this._idComputer + ': ' + this._name + ' \n' +  this._monitor +  '\n' +  this._mouse + '\n' + this._keyBoard ;    
     }
 }
 
@@ -116,3 +116,7 @@ let monitor1 = new Monitor('LG','15');
 let monitor2 = new Monitor('Toshiba','27');
 console.log(monitor1.toString());
 console.log(monitor2.toString());
+
+
+let pc1 = new Computer('HP',monitor1,m1,kb1);
+console.log(pc1.toString())
