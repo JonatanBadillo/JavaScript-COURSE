@@ -119,4 +119,7 @@ console.log(monitor2.toString());
 
 
 let pc1 = new Computer('HP',monitor1,m1,kb1);
-console.log(pc1.toString())
+console.log(pc1.toString());
+
+let pc2 = new Computer('DELL',monitor2,m2,kb2);
+console.log(pc2.toString());
