@@ -80,6 +80,10 @@ class Monitor{
     set size(size){
         this._size = size;
     }
+
+    toString(){
+        return 'Monitor: [idMonitor: ' + this._idMonitor + ' ,Brand: ' + this._brand + ' ,Size: ' +  this._size + ']';    
+    }
 }
 
 let m1 = new Mouse('usb','hp');
