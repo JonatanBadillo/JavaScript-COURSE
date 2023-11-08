@@ -53,6 +53,15 @@ class KeyBoard extends InputDevice{
      }
 }
 
+class Monitor{
+    static counterMonitor = 0;
+    constructor(brand,size){
+        this._idMonitor = ++Monitor.counterMonitor;
+        this._brand = brand;
+        this._size = size;
+    }
+}
+
 let m1 = new Mouse('usb','hp');
 console.log(m1.toString())
 
