@@ -101,6 +101,30 @@ class Computer{
     }
 }
 
+class Order{
+    static counterOrder = 0 ;
+    constructor(){
+        this._idOrder = ++Order.counterOrder;
+        this._computers = [];
+    }
+
+    get idOrder(){
+        return this._idOrder;
+    }
+
+    addComputer(computer){
+        this._computers.push(computer);
+    }
+
+    showOrder(){
+
+    }
+
+    toString(){
+
+    }
+}
+
 let m1 = new Mouse('usb','hp');
 let m2 = new Mouse('bluetooth','toshiba');
 console.log(m1.toString());
