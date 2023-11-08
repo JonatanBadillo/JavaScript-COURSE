@@ -87,7 +87,12 @@ class Monitor{
 }
 
 let m1 = new Mouse('usb','hp');
-console.log(m1.toString())
+let m2 = new Mouse('bluetooth','toshiba');
+console.log(m1.toString());
+console.log(m2.toString());
 
 let kb1 = new KeyBoard('type c','dell');
+let kb2 = new KeyBoard('usb','MSI');
 console.log(kb1.toString());
+console.log(kb2.toString());
+
