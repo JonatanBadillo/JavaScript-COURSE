@@ -20,3 +20,19 @@ class InputDevice{
         this._brand = brand;
     }
 }
+
+class Mouse extends InputDevice{
+    static counterMouse = 0;
+    constructor(inputType,brand,){
+        super(inputType,brand);
+        this._idMouse = ++Mouse.counterMouse;
+    }
+
+    get idMouse(){
+        return this._idMouse;
+    }
+
+    toString(){
+        
+    }
+}
