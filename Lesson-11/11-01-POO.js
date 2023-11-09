@@ -32,6 +32,10 @@ console.log(manager1.obtainDetails());
 // Polymorphism
 function print(x){
     console.log(x.obtainDetails());
+    // instance of
+    if(x instanceof Employee){
+        console.log('The object is Employee type');
+    }
 }
 print(e1);
 print(manager1);
