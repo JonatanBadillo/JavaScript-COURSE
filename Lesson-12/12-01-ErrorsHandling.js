@@ -4,5 +4,7 @@ try{
     x = 10;
 }catch(error){
     console.log(error);
+}finally{
+    console.log('Finishing the bug check');
 }
 console.log('error');
