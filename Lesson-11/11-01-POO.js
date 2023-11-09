@@ -8,3 +8,13 @@ class Employee{
         return `Employee: Name:${this._name}, Salary: ${this._salary}`;
     }
 }
+
+class Manager extends Employee{
+    constructor(name,salary,department){
+        super(name,salary);
+        this._department = department;
+    }
+}
+
+let manager1 = new Manager('Juan',500,'Systems');
+console.log(manager1);
