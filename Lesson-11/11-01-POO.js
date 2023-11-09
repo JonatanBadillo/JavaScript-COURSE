@@ -36,6 +36,9 @@ function print(x){
     if(x instanceof Employee){
         console.log('The object is Employee type');
     }
+    if(x instanceof Manager){
+        console.log('The object is Manager type');
+    }
 }
 print(e1);
 print(manager1);
