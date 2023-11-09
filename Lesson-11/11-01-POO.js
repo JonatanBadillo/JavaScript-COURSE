@@ -33,11 +33,14 @@ console.log(manager1.obtainDetails());
 function print(x){
     console.log(x.obtainDetails());
     // instance of
-    if(x instanceof Employee){
-        console.log('The object is Employee type');
-    }
     if(x instanceof Manager){
         console.log('The object is Manager type');
+    }
+    else if(x instanceof Employee){
+        console.log('The object is Employee type');
+    }
+    else if(x instanceof Object){
+        console.log('It is Object type');
     }
 }
 print(e1);
