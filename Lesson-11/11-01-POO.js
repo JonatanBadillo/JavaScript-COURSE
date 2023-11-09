@@ -14,7 +14,12 @@ class Manager extends Employee{
         super(name,salary);
         this._department = department;
     }
+
+    // OverWrite
+    obtainDetails(){
+        return `Manager: ${super.obtainDetails()} ,Department:${this._department}`;
+    }
 }
 
 let manager1 = new Manager('Juan',500,'Systems');
-console.log(manager1);
+console.log(manager1.obtainDetails());
