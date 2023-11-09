@@ -21,5 +21,9 @@ class Manager extends Employee{
     }
 }
 
+
+let e1 = new Employee('Paco',200);
+console.log(e1.obtainDetails());
+
 let manager1 = new Manager('Juan',500,'Systems');
 console.log(manager1.obtainDetails());
