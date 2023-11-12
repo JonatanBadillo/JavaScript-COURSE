@@ -24,3 +24,6 @@ console.log(hello());
 
 const returningObject = () => ({name:'Juan'})
 console.log(returningObject())
+
+const functionParameters = (msg) => console.log(msg);
+functionParameters('hello function with parameters')
