@@ -21,3 +21,6 @@ myArrowFunction();
 const hello = () => 'hello from Arrow Function'; 
 
 console.log(hello());
+
+const returningObject = () => ({name:'Juan'})
+console.log(returningObject())
