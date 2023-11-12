@@ -3,9 +3,12 @@ let myFunction = function(){
 }
 
 // Arrow Function
-let myArrowFunction = () => {
-    console.log('Hello from Arrow Function');
-}
+// Hoisting not applicable
+// const myArrowFunction = () => {
+//     console.log('Hello from Arrow Function');
+// }
+
+const myArrowFunction = () => console.log('Hello from Arrow Function');
 
 myFunction();
 
