@@ -8,3 +8,15 @@ function myFunction2(){
 
 myFunction1();
 myFunction2();
+
+// CALLBACK FUNCTIONS
+function print(msg){
+    console.log(msg);
+}
+
+function add(op1,op2, functionCallback){
+    let res = op1 + op2;
+    functionCallback(res); // calling the function
+}
+
+add(2,5,print);
