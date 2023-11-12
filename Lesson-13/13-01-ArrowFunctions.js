@@ -13,3 +13,11 @@ const myArrowFunction = () => console.log('Hello from Arrow Function');
 myFunction();
 
 myArrowFunction();
+
+// const hello = () => {
+//     return 'hello from Arrow Function'
+// }
+
+const hello = () => 'hello from Arrow Function'; 
+
+console.log(hello());
