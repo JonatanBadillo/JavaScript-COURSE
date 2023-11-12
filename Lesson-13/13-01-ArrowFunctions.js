@@ -3,8 +3,10 @@ let myFunction = function(){
 }
 
 // Arrow Function
-let myArrowFunction = ()=>{
-
+let myArrowFunction = () => {
+    console.log('Hello from Arrow Function');
 }
 
 myFunction();
+
+myArrowFunction();
