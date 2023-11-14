@@ -1,5 +1,5 @@
 let myPromise = new Promise((resolve, rejected) => {
-    let expression = true;
+    let expression = false;
     if(expression){
         resolve('Resolved correctly');
     }else{
@@ -7,7 +7,9 @@ let myPromise = new Promise((resolve, rejected) => {
     }
 });
 
-myPromise.then(
-    value => console.log(value),
-    error => console.log(error)
-);
+//myPromise.then(
+//    value => console.log(value),
+//    error => console.log(error)
+//);
+
+myPromise.then(value => console.log(value)).catch(error => console.log(error));
