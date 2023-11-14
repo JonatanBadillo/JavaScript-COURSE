@@ -23,3 +23,10 @@ let promise = new Promise((resolved) =>{
 });
 
 promise.then( value=> console.log(value));
+
+// async indicates that a function will return a promise
+async function myFunctionPromise(){
+   return 'hello with promise and async' ;
+}
+
+myFunctionPromise().then(value => console.log(value));
