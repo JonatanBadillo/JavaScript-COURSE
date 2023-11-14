@@ -7,9 +7,12 @@
     <title>Example DOM with JavaScript</title>
 </head>
 <body>
-    <h1>Example DOM with JavaScript</h1>
-    <p>Hello!</p>
+    <h1 id='header'>Example DOM with JavaScript</h1>
+    <p id="paragraph">Hello!</p>
     <script>
+        // Accessing the element HTML
+        let header = document.getElementById('header').innerHTML;
+        console.log('value header: ' + header)
         console.log('Hello from JavaScript');
     </script>
 </body>
