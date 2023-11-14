@@ -14,9 +14,9 @@ function print(msg){
     console.log(msg);
 }
 
-function add(op1,op2, functionCallback){
+function add(op1,op2, print){
     let res = op1 + op2;
-    functionCallback(res); // calling the function
+    print('Result: ' + res); // calling the function
 }
 
 add(2,5,print);
