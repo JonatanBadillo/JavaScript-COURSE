@@ -7,17 +7,18 @@
     <title>Example DOM with JavaScript</title>
 </head>
 <body>
-    <h1 id='header'>Example DOM with JavaScript</h1>
+    <h1 id='header1'>Example DOM with JavaScript</h1>
     <p id="paragraph">Hello!</p>
     <script>
         // Accessing the element HTML
-        let header = document.getElementById('header').innerHTML;
-        console.log('value header: ' + header)
+        let header1 = document.getElementById('header1');
+        console.log('value header: ' + header1.innerHTML)
         let paragraph = document.getElementById('paragraph');
         console.log('value paragraph: ' + paragraph.innerHTML)
         paragraph.innerHTML = 'New paragraph value';
-        header.innerHTML = 'New Header from JS'
+        header1.innerHTML = 'New Header from JS';
         console.log('value paragraph: ' + paragraph.innerHTML)
+        console.log('header value: ' + header1.innerHTML)
         console.log('Hello from JavaScript');
     </script>
 </body>
