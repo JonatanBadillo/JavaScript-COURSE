@@ -40,3 +40,14 @@ async function functionPromiseAwait(){
 }
 
 functionPromiseAwait();
+
+
+// Promises, await, async & timeout
+async function functionPromiseAwaitTimeout(){
+    let promise2 = new Promise(resolver => {
+        setTimeout(()=> resolve('Promise with Await & timeout'),3000);
+    });
+    console.log(await promise2);
+}
+
+functionPromiseAwaitTimeout();
