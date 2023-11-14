@@ -29,4 +29,14 @@ async function myFunctionPromise(){
    return 'hello with promise and async' ;
 }
 
-myFunctionPromise().then(value => console.log(value));
+// myFunctionPromise().then(value => console.log(value));
+
+// async/await
+async function functionPromiseAwait(){
+    let myPromise2 = new Promise(resolve => {
+        resolve('Promise with await');
+    });
+    console.log(await myPromise2);
+}
+
+functionPromiseAwait();
