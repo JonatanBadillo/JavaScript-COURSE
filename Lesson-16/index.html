@@ -15,6 +15,12 @@
     <h1 id='header1' class="blue">Example DOM with JavaScript</h1>
     <p id="paragraph" class="blue">Hello!</p>
     <p id="p2" class="blue">Other paragraph</p>
+    <form id="form1">
+        Name: <input type="text" name="name" value="Jony">
+        <br>
+        Lastname: <input type="text" name="lastname" value="Badillo">
+    </form>
+    <button onclick="showValues()">Show</button>
     <script>
         // Accessing the element HTML
         let header1 = document.getElementById('header1');
@@ -45,6 +51,8 @@
         for(let i=0;i<paragraphs.length; i++){
             console.log(paragraphs[i].innerHTML);
         }
+
+        
     </script>
 </body>
 </html>
