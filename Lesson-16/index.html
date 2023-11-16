@@ -9,6 +9,7 @@
 <body>
     <h1 id='header1'>Example DOM with JavaScript</h1>
     <p id="paragraph">Hello!</p>
+    <p id="p2">Other paragraph</p>
     <script>
         // Accessing the element HTML
         let header1 = document.getElementById('header1');
@@ -20,6 +21,8 @@
         console.log('value paragraph: ' + paragraph.innerHTML)
         console.log('header value: ' + header1.innerHTML)
         console.log('Hello from JavaScript');
+        let paragraphs = document.getElementsByTagName('p')
+        console.log('Number paragraphs: ' + paragraphs.length)
     </script>
 </body>
 </html>
