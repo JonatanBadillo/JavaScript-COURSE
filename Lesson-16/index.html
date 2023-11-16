@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example DOM with JavaScript</title>
+    <style>
+        .blue{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <h1 id='header1'>Example DOM with JavaScript</h1>
-    <p id="paragraph">Hello!</p>
-    <p id="p2">Other paragraph</p>
+    <p id="paragraph" class="blue">Hello!</p>
+    <p id="p2" class="blue">Other paragraph</p>
     <script>
         // Accessing the element HTML
         let header1 = document.getElementById('header1');
@@ -21,8 +26,15 @@
         console.log('value paragraph: ' + paragraph.innerHTML)
         console.log('header value: ' + header1.innerHTML)
         console.log('Hello from JavaScript');
+        // Accessing elements by Tags
         let paragraphs = document.getElementsByTagName('p')
         console.log('Number paragraphs: ' + paragraphs.length)
+        for(let i=0;i<paragraphs.length; i++){
+            console.log(paragraphs[i].innerHTML);
+        }
+        // Accessing elements by ClassName
+        paragraphs = document.getElementsByClassName('blue');
+        console.log('Number paragraphs blue: ' + paragraphs.length)
         for(let i=0;i<paragraphs.length; i++){
             console.log(paragraphs[i].innerHTML);
         }
