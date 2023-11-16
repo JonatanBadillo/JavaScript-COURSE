@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <h1 id='header1'>Example DOM with JavaScript</h1>
+    <h1 id='header1' class="blue">Example DOM with JavaScript</h1>
     <p id="paragraph" class="blue">Hello!</p>
     <p id="p2" class="blue">Other paragraph</p>
     <script>
@@ -34,7 +34,14 @@
         }
         // Accessing elements by ClassName
         paragraphs = document.getElementsByClassName('blue');
-        console.log('Number paragraphs blue: ' + paragraphs.length)
+        console.log('Number elements blue: ' + paragraphs.length)
+        for(let i=0;i<paragraphs.length; i++){
+            console.log(paragraphs[i].innerHTML);
+        }
+
+        // Accessing elements by query Selector
+        paragraphs = document.querySelectorAll('h1.blue');
+        console.log('Number headers with blue: ' + paragraphs.length)
         for(let i=0;i<paragraphs.length; i++){
             console.log(paragraphs[i].innerHTML);
         }
