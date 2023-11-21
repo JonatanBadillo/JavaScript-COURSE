@@ -14,7 +14,7 @@
 <body>
 
     
-    <h1 id='header1' class="blue" onclick="this.innerHTML= 'New Title (Event) '">Example DOM with JavaScript</h1>
+    <h1 id='header1' class="blue" onclick="changeText(this)">Example DOM with JavaScript</h1>
     <p id="paragraph" class="blue">Hello!</p>
     <p id="p2" class="blue">Other paragraph</p>
     <form id="form1">
@@ -30,6 +30,10 @@
 
 
     <script>
+        function changeText(title){
+            title.innerHTML= 'New Title (Event)';
+        }
+
         // Accessing the element HTML
         let header1 = document.getElementById('header1');
         console.log('value header: ' + header1.innerHTML)
