@@ -12,6 +12,8 @@
     </style>
 </head>
 <body>
+
+
     <h1 id='header1' class="blue">Example DOM with JavaScript</h1>
     <p id="paragraph" class="blue">Hello!</p>
     <p id="p2" class="blue">Other paragraph</p>
@@ -23,6 +25,10 @@
     <button onclick="showValues()">Show</button>
     <div id="values"></div>
     <img id="image" src="http://globalmentoring.com.mx/imagenes/javascript.png">
+
+
+
+
     <script>
         // Accessing the element HTML
         let header1 = document.getElementById('header1');
@@ -53,6 +59,9 @@
         for(let i=0;i<paragraphs.length; i++){
             console.log(paragraphs[i].innerHTML);
         }
+
+        // changing style of DOM
+        document.getElementById('header1').style.color = 'red'
 
         // Form
         function showValues(){
