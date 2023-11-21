@@ -22,6 +22,7 @@
     </form>
     <button onclick="showValues()">Show</button>
     <div id="values"></div>
+    <img id="image" src="http://globalmentoring.com.mx/imagenes/javascript.png">
     <script>
         // Accessing the element HTML
         let header1 = document.getElementById('header1');
@@ -68,6 +69,9 @@
             console.log(text);
             document.getElementById('values').innerHTML = text;
             document.getElementById('header1').innerHTML = 'NEW TITLE'
+
+            // changing atributes in DOM
+            document.getElementById('image').src = 'http://globalmentoring.com.mx/imagenes/html5.png'
         }
         
         // Usage of document.write
