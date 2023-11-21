@@ -57,9 +57,14 @@
         function showValues(){
             let form = document.forms['form1'];
             let text = '';
-            for(let i of form){
-                text += i.value + '<br/>'
-            }
+            //for(let i of form){
+            //    text += i.value + '<br/>'
+            //}
+
+            // accessing each element of the form
+            let name = form['name']
+            let lastname = form['lastname']
+            text = name.value + ' ' + lastname.value
             console.log(text);
             document.getElementById('values').innerHTML = text;
         }
