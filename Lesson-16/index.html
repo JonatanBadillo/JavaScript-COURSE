@@ -93,6 +93,10 @@
         document.write('Hello from JavaScript');
         
         document.getElementById('title').onclick = changeText;
+
+        function changeText(){
+            document.getElementById('title').innerHTML = 'New Title';
+        }
         </script>
 </body>
 </html>
