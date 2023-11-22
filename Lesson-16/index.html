@@ -14,7 +14,8 @@
 <body>
 
     
-    <h1 id='header1' class="blue" onclick="changeText(this)">Example DOM with JavaScript</h1>
+    <!--<h1 id='header1' class="blue" onclick="changeText(this)">Example DOM with JavaScript</h1> -->
+    <h1 id="title"> DOM with JavaScript</h1>
     <p id="paragraph" class="blue">Hello!</p>
     <p id="p2" class="blue">Other paragraph</p>
     <form id="form1">
@@ -91,7 +92,7 @@
         // Usage of document.write
         document.write('Hello from JavaScript');
         
-        
+        document.getElementById('title').onclick = changeText;
         </script>
 </body>
 </html>
