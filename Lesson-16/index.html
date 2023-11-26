@@ -15,7 +15,7 @@
 
     
     <!--<h1 id='header1' class="blue" onclick="changeText(this)">Example DOM with JavaScript</h1> -->
-    <h1 id="title"> DOM with JavaScript</h1>
+    <h1 id="title" onmouseover="red(this)"> DOM with JavaScript</h1>
     <div id="show"></div>
     <p id="paragraph" class="blue">Hello!</p>
     <p id="p2" class="blue">Other paragraph</p>
@@ -32,7 +32,13 @@
 
 
     <script>
-        // methos changing
+        //method red
+        //ONMOUSEOVER
+        function red(tittle){
+            tittle.style.color = 'red'
+        }
+
+        // method changing
         // ONCHANGE METHOD
         function changing(nameImput){
             nameImput.value = nameImput.value.toUpperCase();
