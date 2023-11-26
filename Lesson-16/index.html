@@ -11,7 +11,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="entry()">
 
     
     <!--<h1 id='header1' class="blue" onclick="changeText(this)">Example DOM with JavaScript</h1> -->
@@ -32,6 +32,11 @@
 
 
     <script>
+        // method entry
+        function entry(){
+            alert('Entering to the web page')
+        }
+
         document.getElementById('title').onclick = changeText;
 
         function changeText(){
