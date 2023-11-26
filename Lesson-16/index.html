@@ -20,7 +20,7 @@
     <p id="paragraph" class="blue">Hello!</p>
     <p id="p2" class="blue">Other paragraph</p>
     <form id="form1">
-        Name: <input type="text" name="name" value="Jony">
+        Name: <input type="text" name="name" value="Jony" onchange="changing(this)">
         <br>
         Lastname: <input type="text" name="lastname" value="Badillo">
     </form>
@@ -32,6 +32,11 @@
 
 
     <script>
+        // methos changing
+        function changing(nameImput){
+            nameImput.value = nameImput.value.toUpperCase();
+        }
+
         // method entry
         function entry(){
             alert('Entering to the web page');
