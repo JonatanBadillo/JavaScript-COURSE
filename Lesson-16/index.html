@@ -25,7 +25,7 @@
         <br>
         Lastname: <input type="text" name="lastname" value="Badillo">
         <br>
-        Age: <input type="text" name="age" value="21" onfocus="changing2(this)">
+        Age: <input type="text" name="age" value="21" onfocus="changing2(this)" onblur="return1(this)">
         <br>
     </form>
     <button onclick="showValues()">Show</button>
@@ -58,6 +58,10 @@
 
         function changing2(nameImput){
             nameImput.style.background = 'yellow'
+        }
+
+        function return1(input){
+           input.style.background = 'white'
         }
         // method entry
         // ALERTS
