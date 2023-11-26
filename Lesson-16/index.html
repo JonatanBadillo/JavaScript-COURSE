@@ -24,6 +24,9 @@
         Name: <input type="text" name="name" value="Jony" onchange="changing(this)">
         <br>
         Lastname: <input type="text" name="lastname" value="Badillo">
+        <br>
+        Age: <input type="text" name="age" value="21" onfocus="changing2(this)">
+        <br>
     </form>
     <button onclick="showValues()">Show</button>
     <div id="values"></div>
@@ -53,6 +56,9 @@
             nameImput.value = nameImput.value.toUpperCase();
         }
 
+        function changing2(nameImput){
+            nameImput.style.background = 'yellow'
+        }
         // method entry
         // ALERTS
         function entry(){
